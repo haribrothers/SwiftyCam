@@ -131,9 +131,9 @@ import AVFoundation
         }
     }
 
-	init(coder aDecoder: NSCoder) {
-		self.flashEnabled = .on
-		super.init(aDecoder)
+	required init(coder aDecoder: NSCoder) {
+		self.flashEnabled = false
+		super.init(coder: aDecoder)
 	}
     
     // Flash Mode
