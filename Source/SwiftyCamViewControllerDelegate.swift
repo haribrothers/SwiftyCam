@@ -21,7 +21,7 @@ import AVFoundation
 
 /// Delegate for SwiftyCamViewController
 
-public protocol SwiftyCamViewControllerDelegate: class {
+@objc public protocol SwiftyCamViewControllerDelegate: class {
     
     /**
      SwiftyCamViewControllerDelegate function called when when SwiftyCamViewController session did start running.

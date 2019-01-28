@@ -29,6 +29,19 @@ import AVFoundation
 
     @objc public enum CameraSelection: Int {
 
+		public init?(rawValue: String) {
+			switch (rawValue){
+			case "rear": self = .rear
+			case "front": self = .front
+			default: return nil
+			}
+		}
+		public var rawValue: String{
+			switch(self){
+			case .rear: return "rear"
+			case .front: return "front"
+			}
+		}
 		/// Camera on the back of the device
 		case rear
 
