@@ -21,13 +21,13 @@ import AVFoundation
 
 /// A UIViewController Camera View Subclass
 
-open class SwiftyCamViewController: UIViewController {
+@objc open class SwiftyCamViewController: UIViewController {
 
 	// MARK: Enumeration Declaration
 
 	/// Enumeration for Camera Selection
 
-    public enum CameraSelection: String {
+    @objc public enum CameraSelection: String {
 
 		/// Camera on the back of the device
 		case rear = "rear"
@@ -36,7 +36,7 @@ open class SwiftyCamViewController: UIViewController {
 		case front = "front"
 	}
     
-    public enum FlashMode{
+    @objc public enum FlashMode: Int{
         //Return the equivalent AVCaptureDevice.FlashMode
         var AVFlashMode: AVCaptureDevice.FlashMode {
             switch self {
@@ -61,7 +61,7 @@ open class SwiftyCamViewController: UIViewController {
 	/// Enumeration for video quality of the capture session. Corresponds to a AVCaptureSessionPreset
 
 
-	public enum VideoQuality {
+	@objc public enum VideoQuality: Int{
 
 		/// AVCaptureSessionPresetHigh
 		case high
