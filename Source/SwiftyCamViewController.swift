@@ -29,7 +29,7 @@ import AVFoundation
 
     @objc public enum CameraSelection: Int {
 
-		init?(rawValue: String) {
+		public init?(rawValue: String) {
 			switch (rawValue){
 			case "rear": self = .rear
 			case "front": self = .front
