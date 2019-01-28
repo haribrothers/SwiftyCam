@@ -131,7 +131,7 @@ import AVFoundation
         }
     }
 
-	required init?(coder aDecoder: NSCoder) {
+	public required init?(coder aDecoder: NSCoder) {
 		self.flashEnabled = false
 		super.init(coder: aDecoder)
 	}
