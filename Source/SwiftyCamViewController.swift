@@ -36,7 +36,7 @@ import AVFoundation
 			default: return nil
 			}
 		}
-		var rawValue: String{
+		public var rawValue: String{
 			switch(self){
 			case .rear: return "rear"
 			case .front: return "front"
