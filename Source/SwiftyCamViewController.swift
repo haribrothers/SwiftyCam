@@ -130,6 +130,10 @@ import AVFoundation
             self.flashMode = self.flashEnabled ? .on : .off
         }
     }
+
+	init() {
+		self.flashEnabled = false
+	}
     
     // Flash Mode
     public var flashMode:FlashMode               = .off
