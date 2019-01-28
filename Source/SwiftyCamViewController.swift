@@ -27,13 +27,13 @@ import AVFoundation
 
 	/// Enumeration for Camera Selection
 
-    @objc public enum CameraSelection: String {
+    @objc public enum CameraSelection: Int {
 
 		/// Camera on the back of the device
-		case rear = "rear"
+		case rear
 
 		/// Camera on the front of the device
-		case front = "front"
+		case front
 	}
     
     @objc public enum FlashMode: Int{
