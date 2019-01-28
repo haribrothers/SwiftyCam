@@ -125,7 +125,7 @@ import AVFoundation
 
 	/// Sets whether flash is enabled for photo and video capture
     @available(*, deprecated, message: "use flashMode .on or .off") //use flashMode
-    public var flashEnabled: Bool? {
+    public var flashEnabled: Bool {
         didSet{
             self.flashMode = self.flashEnabled ? .on : .off
         }
